@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.myContainer {
-    width:1200px;
-}
