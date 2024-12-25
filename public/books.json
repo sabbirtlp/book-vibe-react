@@ -1,0 +1,202 @@
+ [
+        {
+            "id": 1,
+            "title": "The Catcher in the Rye",
+            "author": "Awlad Hossain",
+            "genre": "Fiction",
+            "review": "Sit amet consectetur. Interdum porta pulvinar non sit aliquam. Aenean pulvinar blandit vel non enim elementum penatibus pellentesque ac.",
+            "tags": [
+                "Young Adult",
+                "Identity"
+            ],
+            "details": {
+                "number_of_pages": 281,
+                "publisher": "J.B Lippincott & Co.",
+                "year_of_publishing": 1960,
+                "rating": 4.8
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/pWQjLdz/kindpng-5624060-1.png"
+        },
+        {
+            "id": 2,
+            "title": "Why Do You Hate Money?",
+            "author": "Joey Percia",
+            "genre": "Non-fiction",
+            "review": "A fitness marketing guide to craft content that converts and master the science of selling without selling out.",
+            "tags": [
+                "Marketing",
+                "Self-Help"
+            ],
+            "details": {
+                "number_of_pages": 200,
+                "publisher": "Percia Publishing",
+                "year_of_publishing": 2018,
+                "rating": 4.5
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/MkCmYQD/kindpng-7318921.png"
+        },
+        {
+            "id": 3,
+            "title": "The Hate U Give",
+            "author": "Angie Thomas",
+            "genre": "Fiction",
+            "review": "A powerful story of a young girl finding her voice amid injustice and hardship.",
+            "tags": [
+                "Young Adult",
+                "Social Issues"
+            ],
+            "details": {
+                "number_of_pages": 464,
+                "publisher": "Balzer + Bray",
+                "year_of_publishing": 2017,
+                "rating": 4.9
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/0QTh2Np/pngwing-1.png"
+        },
+        {
+            "id": 4,
+            "title": "Atomic Habits",
+            "author": "James Clear",
+            "genre": "Self-Help",
+            "review": "An easy and proven way to build good habits and break bad ones.",
+            "tags": [
+                "Self-Improvement",
+                "Productivity"
+            ],
+            "details": {
+                "number_of_pages": 320,
+                "publisher": "Avery",
+                "year_of_publishing": 2018,
+                "rating": 4.8
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/Y70NcmB/kindpng-81724-1.png"
+        },
+        {
+            "id": 5,
+            "title": "Becoming",
+            "author": "Michelle Obama",
+            "genre": "Biography",
+            "review": "A deeply personal memoir by the former First Lady of the United States.",
+            "tags": [
+                "Memoir",
+                "Inspiration"
+            ],
+            "details": {
+                "number_of_pages": 448,
+                "publisher": "Crown Publishing Group",
+                "year_of_publishing": 2018,
+                "rating": 4.9
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/0QTh2Np/pngwing-1.png"
+        },
+        {
+            "id": 6,
+            "title": "Sapiens: A Brief History of Humankind",
+            "author": "Yuval Noah Harari",
+            "genre": "Non-fiction",
+            "review": "A groundbreaking narrative of humanity's creation and evolution.",
+            "tags": [
+                "History",
+                "Anthropology"
+            ],
+            "details": {
+                "number_of_pages": 512,
+                "publisher": "Harper",
+                "year_of_publishing": 2015,
+                "rating": 4.7
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/MkCmYQD/kindpng-7318921.png"
+        },
+        {
+            "id": 7,
+            "title": "The Subtle Art of Not Giving a F*ck",
+            "author": "Mark Manson",
+            "genre": "Self-Help",
+            "review": "A counterintuitive approach to living a good life.",
+            "tags": [
+                "Self-Improvement",
+                "Philosophy"
+            ],
+            "details": {
+                "number_of_pages": 224,
+                "publisher": "HarperOne",
+                "year_of_publishing": 2016,
+                "rating": 4.4
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/pWQjLdz/kindpng-5624060-1.png"
+        },
+        {
+            "id": 8,
+            "title": "Educated",
+            "author": "Tara Westover",
+            "genre": "Biography",
+            "review": "A memoir about a woman who grows up in a strict and abusive household in rural Idaho but eventually escapes to learn about the wider world through education.",
+            "tags": [
+                "Memoir",
+                "Inspiration"
+            ],
+            "details": {
+                "number_of_pages": 334,
+                "publisher": "Random House",
+                "year_of_publishing": 2018,
+                "rating": 4.7
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/FJbwZKY/kindpng-4945926-1.png"
+        },
+        {
+            "id": 9,
+            "title": "The Power of Now",
+            "author": "Eckhart Tolle",
+            "genre": "Spirituality",
+            "review": "A guide to spiritual enlightenment and living in the present moment.",
+            "tags": [
+                "Mindfulness",
+                "Self-Help"
+            ],
+            "details": {
+                "number_of_pages": 229,
+                "publisher": "New World Library",
+                "year_of_publishing": 1997,
+                "rating": 4.6
+            },
+            "actions": [
+                "Read",
+                "Wishlist"
+            ],
+            "image": "https://i.ibb.co.com/0CKj77Q/kindpng-4022054-1.png"
+        }
+        
+    ]
+
