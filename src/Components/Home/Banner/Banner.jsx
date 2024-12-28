@@ -8,7 +8,7 @@ const Banner = () => {
                 <div className="left-content md:w-3/5">
                     <h1 className="text-black md:text-5xl text-4xl md:leading-[50px] font-bold">Books to freshen up your bookshelf</h1>
                     <p className='text-[#757575] my-5'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                    <Link to={'/jobs'}>
+                    <Link to={'/listed-books'}>
                     <button className='py-3 px-6 font-semibold text-xl bg-[#23BE0A] hover:bg-black rounded text-white'>Get Started</button>
                     </Link>
                 </div>
