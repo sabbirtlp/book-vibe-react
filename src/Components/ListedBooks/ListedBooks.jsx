@@ -1,5 +1,47 @@
-
+import { useState,useEffect } from "react";
+import { useLoaderData } from "react-router";
+import { getStoredReadBook, getStoredWishListBook } from "../../utilities/localStorage";
+import SingleReadAndWishListBook from "../SingleReadAndWishListBook/SingleReadAndWishListBook";
+import './ListedBooks.css'
 const ListedBooks = () => {
+    const books = useLoaderData(); 
+    const [readBooks, setReadBooks] = useState([])
+    const [wishListBooks,setWishListBooks] = useState([])
+    
+    console.log(readBooks);
+    
+    useEffect(() => {
+        const storedReadBookIds = getStoredReadBook();
+        const readBooks = [];
+
+        for (const id of storedReadBookIds) {
+            const readBook = books.find(book => book.id === id);
+            if (readBook) {
+                readBooks.push(readBook)
+            }
+        }
+        setReadBooks(readBooks);
+
+        const storedWishListBooksIds = getStoredWishListBook()
+        const wishlistBooks = [];
+
+        for(const id of storedWishListBooksIds){
+            const wishlistBook = books.find(book => book.id === id)
+            if(wishlistBook){
+                wishlistBooks.push(wishlistBook)
+            }
+        }
+
+        setWishListBooks(wishlistBooks)
+        
+        // if(books.length > 0 ){
+        //     const readBooks = books.filter(book => storedBookIds.includes(book.id))
+        //     console.log(books, storedBookIds,readBooks);  
+        // }
+    }, [])
+
+   
+    
     return (
         <div>
             <section className="py-[80px] bg-[#F9F9FF]">
@@ -8,23 +50,35 @@ const ListedBooks = () => {
                 </div>
             </section>
             <section className="bg-white">
-            <div role="tablist" className="tabs tabs-lifted container mx-auto py-[80px]">
-                <input type="radio" name="my_tabs_2" role="tab" className="h-[60px] checked:bg-white bg-white tab font-semibold text-xl checked:text-white text-gray-500 " aria-label="Read Books" />
-                <div role="tabpanel" className="bg-white tab-content  border-gray-300 rounded-box p-6">
-                    Tab content 1
+                <div role="tablist" className="tabs tabs-lifted container mx-auto py-[80px] ">
+                    <input 
+                    type="radio"
+                    name="my_tabs_2" 
+                    role="tab" 
+                    className="tab text-lg" 
+                    aria-label="Read Books" 
+                    />
+                    <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 border-none">
+                        {
+                            readBooks.map(book => <SingleReadAndWishListBook key={book.id} book={book}></SingleReadAndWishListBook>)
+                        }
+                    </div>
+
+                    <input
+                        type="radio"
+                        name="my_tabs_2"
+                        role="tab"
+                        className="tab text-lg "
+                        aria-label="Wishlist Books"
+                        defaultChecked />
+                    <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 border-none">
+                        {
+                            wishListBooks.map(book => <SingleReadAndWishListBook key={book.id} book={book}></SingleReadAndWishListBook>)
+                        }
+                    </div>
                 </div>
-
-                <input type="radio" name="my_tabs_2" role="tab" className="h-[60px] checked:bg-white bg-white tab font-semibold text-xl checked:text-white text-gray-500 " aria-label="Read Books" />
-                <div role="tabpanel" className="bg-white tab-content  border-gray-300 rounded-box p-6">
-                    Tab content 2
-                </div>
-
-                
-
-                
-            </div>
             </section>
-            
+
         </div>
     );
 };

@@ -1,0 +1,4 @@
+.tabs-lifted > .tab:is(.tab-active, [aria-selected="true"]):not(.tab-disabled):not([disabled]), .tabs-lifted > .tab:is(input:checked){
+
+    color:white;
+}
