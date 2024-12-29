@@ -2,3 +2,6 @@
 
     color:white;
 }
+input.tab.text-lg{
+    width: 150px !important;
+}

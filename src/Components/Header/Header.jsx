@@ -13,7 +13,7 @@ const Header = () => {
     return (
 
         <div className="bg-[#fff] py-5">
-            <div className="navbar container mx-auto flex">
+            <div className="navbar container mx-auto  flex">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <Link to='/'>
-                        <a className="btn btn-ghost text-2xl md:text-3xl font-bold text-black">Book <span className="gradient_text">Vibe</span></a>
+                        <a className="btn btn-ghost text-xl md:text-3xl font-bold text-black">Book <span className="gradient_text">Vibe</span></a>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -47,10 +47,10 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to={''}>
-                        <a className="text-lg border-none btn text-white bg-[#23BE0A] hover:bg-[#000] mr-4">Sign In</a>
+                        <a className="md:text-lg text-sm border-none btn text-white bg-[#23BE0A] hover:bg-[#000] mr-4">Sign In</a>
                     </Link>
                     <Link to={''}>
-                        <a className="text-lg border-none btn bg-[#59C6D2] text-white hover:bg-[#000000]">Sign Up</a>
+                        <a className="md:text-lg text-sm border-none btn bg-[#59C6D2] text-white hover:bg-[#000000]">Sign Up</a>
                     </Link>
                 </div>
             </div>

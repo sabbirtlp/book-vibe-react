@@ -23,10 +23,10 @@ const SingleReadAndWishListBook = ({book}) => {
 
                         <div className="mt-[15px] flex justify-between items-center">
                             <h4 className="text-black font-semibold text-md">Year of Publishing: </h4>
-                            <p className="text-black font-semibold"> {year_of_publishing}</p>
+                            <p className="text-black font-semibold"> { year_of_publishing}</p>
                         </div>
                     </div>
-                    <div className="flex gap-5 ">
+                    <div className="flex gap-5 md:flex-row flex-col">
                         <div className="flex justify-start gap-2 items-center text-black">
                         <LuUsers />
                         <p>Publisher: {publisher}</p>
@@ -40,10 +40,10 @@ const SingleReadAndWishListBook = ({book}) => {
                     <br />
                     <hr />
                     <br />
-                    <div className="flex justify-start items-center gap-3">
+                    <div className="flex justify-start md:items-center  gap-3 md:flex-row flex-col">
                         <button className="btn text-[#328EFF] bg-[#E0EEFF] border-none ">Category: {genre}</button>
                         <button className="btn text-[#FFAC33] bg-[#FFF3E0] border-none">Rating: {rating}</button>
-                        <Link to={`/book/${id}`} ><button className="btn bg-[#23BE0A] border-none text-white">View Details</button></Link>
+                        <Link to={`/book/${id}`} ><button className="btn bg-[#23BE0A] w-full border-none text-white">View Details</button></Link>
                     </div>
             </div>
         </div>

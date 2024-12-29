@@ -57,6 +57,7 @@ const ListedBooks = () => {
                     role="tab" 
                     className="tab text-lg" 
                     aria-label="Read Books" 
+
                     />
                     <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 border-none">
                         {
