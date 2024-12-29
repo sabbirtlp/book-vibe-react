@@ -25,7 +25,7 @@ const getStoredWishListBook = () => {
 }
 
 const saveWishListBook = (id) =>{
-    const storedWishListBooks = getStoredReadBook();
+    const storedWishListBooks = getStoredWishListBook();
     const exists = storedWishListBooks.find(bookId => bookId === id); 
     if(!exists){
         storedWishListBooks.push(id); 

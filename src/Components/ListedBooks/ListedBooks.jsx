@@ -4,11 +4,12 @@ import { getStoredReadBook, getStoredWishListBook } from "../../utilities/localS
 import SingleReadAndWishListBook from "../SingleReadAndWishListBook/SingleReadAndWishListBook";
 import './ListedBooks.css'
 const ListedBooks = () => {
+
     const books = useLoaderData(); 
     const [readBooks, setReadBooks] = useState([])
     const [wishListBooks,setWishListBooks] = useState([])
     
-    console.log(readBooks);
+    
     
     useEffect(() => {
         const storedReadBookIds = getStoredReadBook();
@@ -22,6 +23,15 @@ const ListedBooks = () => {
         }
         setReadBooks(readBooks);
 
+  
+        
+        // if(books.length > 0 ){
+        //     const readBooks = books.filter(book => storedBookIds.includes(book.id))
+        //     console.log(books, storedBookIds,readBooks);  
+        // }
+    }, [])
+
+    useEffect(()=>{
         const storedWishListBooksIds = getStoredWishListBook()
         const wishlistBooks = [];
 
@@ -33,12 +43,7 @@ const ListedBooks = () => {
         }
 
         setWishListBooks(wishlistBooks)
-        
-        // if(books.length > 0 ){
-        //     const readBooks = books.filter(book => storedBookIds.includes(book.id))
-        //     console.log(books, storedBookIds,readBooks);  
-        // }
-    }, [])
+    },[])
 
    
     
