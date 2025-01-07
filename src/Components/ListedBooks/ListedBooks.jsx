@@ -1,16 +1,16 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router";
 import { getStoredReadBook, getStoredWishListBook } from "../../utilities/localStorage";
 import SingleReadAndWishListBook from "../SingleReadAndWishListBook/SingleReadAndWishListBook";
 import './ListedBooks.css'
 const ListedBooks = () => {
 
-    const books = useLoaderData(); 
+    const books = useLoaderData();
     const [readBooks, setReadBooks] = useState([])
-    const [wishListBooks,setWishListBooks] = useState([])
-    
-    
-    
+    const [wishListBooks, setWishListBooks] = useState([])
+
+
+
     useEffect(() => {
         const storedReadBookIds = getStoredReadBook();
         const readBooks = [];
@@ -23,30 +23,30 @@ const ListedBooks = () => {
         }
         setReadBooks(readBooks);
 
-  
-        
+
+
         // if(books.length > 0 ){
         //     const readBooks = books.filter(book => storedBookIds.includes(book.id))
         //     console.log(books, storedBookIds,readBooks);  
         // }
-    }, [])
+    }, [books])
 
-    useEffect(()=>{
+    useEffect(() => {
         const storedWishListBooksIds = getStoredWishListBook()
         const wishlistBooks = [];
 
-        for(const id of storedWishListBooksIds){
+        for (const id of storedWishListBooksIds) {
             const wishlistBook = books.find(book => book.id === id)
-            if(wishlistBook){
+            if (wishlistBook) {
                 wishlistBooks.push(wishlistBook)
             }
         }
 
         setWishListBooks(wishlistBooks)
-    },[])
+    }, [])
 
-   
-    
+
+
     return (
         <div>
             <section className="py-[80px] bg-[#F9F9FF]">
@@ -56,12 +56,12 @@ const ListedBooks = () => {
             </section>
             <section className="bg-white">
                 <div role="tablist" className="tabs tabs-lifted container mx-auto py-[80px] ">
-                    <input 
-                    type="radio"
-                    name="my_tabs_2" 
-                    role="tab" 
-                    className="tab text-lg" 
-                    aria-label="Read Books" 
+                    <input
+                        type="radio"
+                        name="my_tabs_2"
+                        role="tab"
+                        className="tab text-lg"
+                        aria-label="Read Books"
 
                     />
                     <div role="tabpanel" className="tab-content bg-white border-base-300 rounded-box p-6 border-none">
